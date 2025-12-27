@@ -8,6 +8,7 @@
 
     <h1 style="color:white"> Welcome to the universe </h1>
 
+    <div id="container"></div>
     <script>
         // create data to graph
         nodes = [{ "id": "Set"}, { "id": "Magma"}];
@@ -16,6 +17,9 @@
 
         // create a chart from the loaded data
         var chart = anychart.graph(data)
+
+        //draw the chart
+        chart.container("container").draw()
     </script>
 
 </body>
