@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-graph.min.js"></script>
+</head>
 <body style="background-color: #1e053d;">
-<h1> Welcome to the universe </h1>
 
-<p>Set</p>
+    <h1 style="color:white"> Welcome to the universe </h1>
+
+    <script>
+        // create data to graph
+        nodes = [{ "id": "Set"}, { "id": "Magma"}];
+        edges = [{ "from": "Set", "to": "Magma"}];
+        data = '{nodes, edges}';
+
+        // create a chart from the loaded data
+        var chart = anychart.graph(data)
+    </script>
 
 </body>
 </html>
